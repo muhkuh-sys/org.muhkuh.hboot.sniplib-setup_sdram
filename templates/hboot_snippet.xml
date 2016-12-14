@@ -1,0 +1,13 @@
+<!-- Load the show_hwconfig program. -->
+<Data>
+	<Hex address="${%LOAD_ADDRESS%}">
+${%PROGRAM_DATA%}
+	</Hex>
+</Data>
+<Execute>
+	<Address>${%EXECUTION_ADDRESS%}</Address>
+	<R0>%%SDRAM_DATA_START%%</R0>
+	<R1>%%GENERAL_CTRL%%</R1>
+	<R2>%%TIMING_CTRL%%</R2>
+	<R3>%%MODE_REGISTER%%</R3>
+</Execute>
